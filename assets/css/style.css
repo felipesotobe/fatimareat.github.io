@@ -182,6 +182,53 @@ HOMEPAGE
     margin-top: 2em;
 }
 
+
+/*
+PÁGINA DE PORTAFOLIO
+*/
+
+.portafolio {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 0 0.5em 8em 0.5em;
+}
+
+.portafolio-item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 30em;
+    margin: 1em;
+    flex: 1 1 45%;
+    border-radius: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+.portafolio .text-pill {
+    margin: 0em 1em 1em 1em;
+}
+
+/* cambio de cursor en hover */
+.portafolio-suv:hover {
+    cursor: url('/assets/img/emoji-suv.png'), auto;
+}
+
+.portafolio-centro:hover {
+    cursor: url('/assets/img/emoji-centro.png'), auto;
+}
+
+.portafolio-crepes:hover {
+    cursor: url('/assets/img/emoji-crepes.png'), auto;
+}
+
+.portafolio-laptop:hover {
+    cursor: url('/assets/img/emoji-laptop.png'), auto;
+}
+
+
 /*
 FOOTER
 */
@@ -232,52 +279,6 @@ footer {
     background-color: #000;
     color: #fff;
     margin-top: 2em;
-}
-
-
-/*
-PÁGINA DE PORTAFOLIO
-*/
-
-.portafolio {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #fff;
-    padding: 0 0.5em 8em 0.5em;
-}
-
-.portafolio-item {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 30em;
-    margin: 1em;
-    flex: 1 1 45%;
-    border-radius: 1em;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-end;
-}
-
-.portafolio .text-pill {
-    margin: 0em 1em 1em 1em;
-}
-
-/* cambio de cursor en hover */
-.portafolio-suv:hover {
-    cursor: url('/assets/img/emoji-suv.png'), auto;
-}
-
-.portafolio-centro:hover {
-    cursor: url('/assets/img/emoji-centro.png'), auto;
-}
-
-.portafolio-crepes:hover {
-    cursor: url('/assets/img/emoji-crepes.png'), auto;
-}
-
-.portafolio-ig:hover {
-    cursor: url('/assets/img/emoji-ig.png'), auto;
 }
 
 
