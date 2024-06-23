@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+/* estilo compartido en diferentes items */
+
+.btn-style {
+    color: #000;
+    font-weight: 600;
+    background-color: #fff;
+    padding: 0.4em;
+    border: 2px solid #000;
+    border-bottom: 4px solid #000;
+    border-radius: 0.3em;
+}
+
+/*
+HEADER
+*/
+
+/* navbar y menu */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 2em 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar .logo {
+    font-size: 2em;
+    color: #000;
+    font-weight: 700;
+    text-transform: lowercase;
+    line-height: 1em;
+}
+
+.menu-links {
+    list-style: none;
+    display: flex;
+    gap: 1.3rem;
+}
+
+.menu-links li {
+    text-transform: uppercase;
+}
+
+.menu-links a {
+    font-weight: 600;
+}
+
+#toggler,
+.navbar label {
+    display: none;
+}
+
+/*
+HOMEPAGE
+*/
+
+/* hero */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 3em 3em 5em 3em;
+}
+
+.hero-column .hero-phrase {
+    font-size: 2em;
+    font-weight: 600;
+    margin-top: 0.5em;
+}
+
+.hero-column .hero-description {
+    margin-top: 1em;
+    font-size: 1.3em;
+}
+
+.hero-column {
+    flex: 1 0 50%;
+}
+
+.hero-column:last-of-type {
+    text-align: center;
+}
+
+
+/* experiencia */
+.experiencia {
+    padding: 2em 3em 2em 3em;
+    background-color: #fff;
+}
+
+.experiencia-item {
+    margin: 2em 0;
+    padding: 2em;
+    border-radius: 0.8em;
+    box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.1);
+}
+
+.experiencia-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.experiencia-fecha, .experiencia-empresa, .experiencia-cargo {
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.experiencia-empresa {
+    margin-bottom: 0.3em;
+}
+
+.experiencia-cargo {
+    font-size: 1.4em;
+}
+
+.experiencia-descripcion {
+    margin-top: 0.5em;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+
+/* educacion */
+.educacion {
+    padding: 2em 3em 5em 3em;
+}
+
+.educacion:hover {
+    cursor: url('/assets/img/emoji-birrete.png'), auto;
+}
+
+.educacion-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: space-between;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid #000;
+    margin-top: 2em;
+}
+
+.educacion-info p {
+    font-size: 1.2em;
+}
+
+.educacion-curso {
+    font-weight: 700;
+}
+
+.educacion-otros {
+    margin-top: 2em;
+}
+
+/*
+FOOTER
+*/
+footer {
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-cta {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    gap: 0.3em;
+    margin-bottom: 0.5em;
+}
+
+.footer-cta p {
+    font-size: 3em;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    flex: 1 0 auto;
+}
+
+.footer-socials {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.footer-socials a {
+    font-size: 1.5em;
+}
+
+.footer-icons a:first-of-type {
+    margin-right: 1em;
+}
+
+.copyright {
+    font-size: 1em;
+    line-height: 3em;
+    height: 3em;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    margin-top: 2em;
+}
+
+
+/*
+PÁGINA DE PORTAFOLIO
+*/
+
+.portafolio {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 0 0.5em 8em 0.5em;
+}
+
+.portafolio-item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 30em;
+    margin: 1em;
+    flex: 1 1 45%;
+    border-radius: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+.portafolio .text-pill {
+    margin: 0em 1em 1em 1em;
+}
+
+/* cambio de cursor en hover */
+.portafolio-suv:hover {
+    cursor: url('/assets/img/emoji-suv.png'), auto;
+}
+
+.portafolio-centro:hover {
+    cursor: url('/assets/img/emoji-centro.png'), auto;
+}
+
+.portafolio-crepes:hover {
+    cursor: url('/assets/img/emoji-crepes.png'), auto;
+}
+
+.portafolio-ig:hover {
+    cursor: url('/assets/img/emoji-ig.png'), auto;
+}
+
+
+/* media query para crear el menú hamburguesa solo con css */
+@media screen and (width < 1024px) {
+    .menu {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .menu-links {
+        flex-direction: column;
+        margin-top: 1.3em;
+    }
+
+    .menu-links li {
+        border: none;
+        text-align: center;
+    }
+
+    .navbar label {
+        display: flex;
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+
+    #toggler:checked~.menu {
+        max-height: 100%;
+    }
+
+}
